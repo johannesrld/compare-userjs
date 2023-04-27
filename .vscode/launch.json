@@ -1,0 +1,45 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Debug executable 'compare_userjs'",
+			"cargo": {
+				"args": [
+					"build",
+					"--bin=compare_userjs",
+					"--package=compare_userjs"
+				],
+				"filter": {
+					"name": "compare_userjs",
+					"kind": "bin"
+				}
+			},
+			"args": [],
+			"cwd": "${workspaceFolder}"
+		},
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Debug unit tests in executable 'compare_userjs'",
+			"cargo": {
+				"args": [
+					"test",
+					"--no-run",
+					"--bin=compare_userjs",
+					"--package=compare_userjs"
+				],
+				"filter": {
+					"name": "compare_userjs",
+					"kind": "bin"
+				}
+			},
+			"args": [],
+			"cwd": "${workspaceFolder}"
+		}
+	]
+}
