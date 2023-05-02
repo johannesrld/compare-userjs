@@ -6,7 +6,7 @@
 
 use lazy_static::lazy_static;
 use regex::Regex;
-use std::{collections::HashMap, env, fs, hash::Hash};
+use std::{collections::HashMap, env, fs};
 fn main()
 {
     let args: Vec<String> = env::args().collect();
